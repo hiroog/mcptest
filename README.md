@@ -10,38 +10,20 @@ config.json の MCP Server 呼び出しの前に挿入します。
 
 ```json
 {
-	"mcpServers":{
-		"demo-app": {
-			"command": "python",
-			"args": [
-				"command-capture.py",
-					"--quiet",
-					"--log-dir",
-						"logs",
-					"mcp",
-						"run",
-						"server.py"
-			]
-		}
-	}
-}
-
-```json
-{
     "mcpServers":{
-		"demo-app": {
-			"command": "python",
-			"args": [
-				"command-capture.py",
-					"--quiet",
-					"--log-dir",
-						"logs",
-					"mcp",
-						"run",
-						"server.py"
-			]
-		}
-	}
+        "demo-app": {
+            "command": "python",
+            "args": [
+                "command-capture.py",
+                    "--quiet",
+                    "--log-dir",
+                        "logs",
+                    "mcp",
+                        "run",
+                        "server.py"
+            ]
+        }
+    }
 }
 ```
 
